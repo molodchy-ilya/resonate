@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f2f2f2;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.header {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../img/marian-kroell-OVXlWNcQV5M-unsplash.png") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/marian-kroell-OVXlWNcQV5M-unsplash.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 236px;
+  min-width: 300px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__title {
+  font-size: 46px;
+  font-weight: 700;
+  color: #fff;
+  width: 290px;
+}
+
+.item-container {
+  width: 300px;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+.item {
+  border: 1px solid #d3d8e4;
+  padding: 16px 16px 20px 16px;
+  margin-bottom: 30px;
+  position: relative;
+  width: 100%;
+}
+
+.item__category {
+  position: absolute;
+  color: #fff;
+  top: 0;
+  left: 0;
+  background: #00b6dd;
+  text-transform: uppercase;
+  font-size: 12px;
+  height: 32px;
+  padding: 8px 15px;
+}
+
+.item__img {
+  min-width: 258px;
+  height: 140px;
+  background: #ff779a;
+  margin-bottom: 12px;
+}
+
+.item__img img {
+  height: 100%;
+  width: 100%;
+}
+
+.item__description {
+  margin-bottom: 20px;
+}
+
+.item__author {
+  margin-bottom: 6px;
+  font-size: 13px;
+  letter-spacing: 0.8;
+  color: #00b6dd;
+}
+
+.item__title {
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 1.2px;
+  margin-bottom: 10px;
+}
+
+.item__text {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.6px;
+}
+
+.item__btn {
+  letter-spacing: 0.8px;
+  font-size: 12px;
+  width: 140px;
+  height: 36px;
+  border: none;
+  color: #fff;
+  background: #00b6dd;
+  cursor: pointer;
+}
+
+.item_blue .item__category {
+  background: #081580;
+}
+
+.item_blue .item__author {
+  color: #081580;
+}
+
+.item_blue .item__btn {
+  background: #081580;
+}
+
+@media screen and (min-width: 576px) {
+  .header__title {
+    width: 450px;
+  }
+  .item-container {
+    width: 546px;
+  }
+  .item {
+    padding: 28px;
+  }
+  .item__category {
+    margin-top: 12px;
+  }
+  .item__description {
+    margin-bottom: 26px;
+  }
+  .item__img {
+    margin-bottom: 18px;
+    height: 150px;
+  }
+  .item__title {
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    height: 276px;
+  }
+  .header__title {
+    width: 470px;
+  }
+  .item-container {
+    margin: auto;
+    width: 720px;
+    padding: 60px 24px 70px 24px;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .item {
+    width: 345px;
+  }
+  .item__img {
+    height: 150px;
+    width: 289px;
+  }
+  .item__text {
+    margin-bottom: 70px;
+  }
+  .item__btn {
+    position: absolute;
+    bottom: 28px;
+    left: 28px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header {
+    height: 340px;
+  }
+  .header__title {
+    width: 620px;
+    font-size: 54px;
+    letter-spacing: 1.2;
+  }
+  .item-container {
+    width: 960px;
+  }
+  .item {
+    width: 465px;
+  }
+  .item__img {
+    height: 170px;
+    width: 405px;
+    margin-bottom: 20px;
+  }
+  .item__author {
+    font-size: 13px;
+  }
+  .item__title {
+    margin-bottom: 16px;
+  }
+  .item__text {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    height: 396px;
+  }
+  .header__title {
+    width: 730px;
+    font-size: 62px;
+    letter-spacing: 1.4;
+  }
+  .item-container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    width: 1140px;
+  }
+  .item {
+    width: 360px;
+  }
+  .item__img {
+    height: 170px;
+    width: 300px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

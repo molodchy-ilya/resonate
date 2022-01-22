@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+$white: #fff;
+$background-color: #f2f2f2;
+$cerulean: #00b6dd;
+$blue: #081580;
+$grey: #d3d8e4;
+$red: #ff779a;
+$black: #070707;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin media-ssm {
+  @media screen and (min-width: 576px) {
+    @content;
+  }
+}
+@mixin media-sm {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin media-md {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+@mixin media-lg {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}

@@ -1,0 +1,118 @@
+@import 'config';
+
+body {
+  background: $background-color;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../img/marian-kroell-OVXlWNcQV5M-unsplash.png') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 236px;
+  min-width: 300px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__title {
+    font-size: 46px;
+    font-weight: 700;
+    color: $white;
+    width: 290px;
+  }
+}
+.item-container {
+  width: 300px;
+  // padding: 50px 15px 60px;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  margin: auto;
+  display: grid;
+  justify-items: center;
+}
+.item {
+  border: 1px solid $grey;
+
+  padding: 16px 16px 20px 16px;
+  margin-bottom: 30px;
+  position: relative;
+  width: 100%;
+  // width: 290px;
+
+  &__category {
+    position: absolute;
+    color: $white;
+    top: 0;
+    left: 0;
+    background: $cerulean;
+    text-transform: uppercase;
+    font-size: 12px;
+    height: 32px;
+    padding: 8px 15px;
+  }
+
+  &__img {
+    min-width: 258px;
+    height: 140px;
+    background: $red;
+    margin-bottom: 12px;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__description {
+    margin-bottom: 20px;
+  }
+
+  &__author {
+    margin-bottom: 6px;
+    font-size: 13px;
+    letter-spacing: 0.8;
+    color: $cerulean;
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1.2px;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.6px;
+  }
+
+  &__btn {
+    letter-spacing: 0.8px;
+    font-size: 12px;
+    width: 140px;
+    height: 36px;
+    border: none;
+    color: $white;
+    background: $cerulean;
+    cursor: pointer;
+  }
+}
+
+.item_blue {
+  .item__category {
+    background: $blue;
+  }
+
+  .item__author {
+    color: $blue;
+  }
+
+  .item__btn {
+    background: $blue;
+  }
+}
+
+@import 'adaptive';
